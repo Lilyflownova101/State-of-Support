@@ -1,0 +1,74 @@
+.filterContainer {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.filterSelect {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #2D0B31;
+  background: rgba(244, 240, 246, 0.7);
+  border: 2px solid #9E67B2;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235F2B70' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(95, 43, 112, 0.15);
+  transition: all 0.3s ease;
+}
+
+.filterSelect:hover {
+  border-color: #5F2B70;
+  box-shadow: 0 4px 20px rgba(95, 43, 112, 0.25);
+}
+
+.filterSelect:focus {
+  border-color: #5F2B70;
+  box-shadow: 0 0 0 3px rgba(158, 103, 178, 0.3);
+}
+
+.filterSelect:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.filterSelect option {
+  background: #F4F0F6;
+  color: #2D0B31;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+    .filterContainer {
+        /* Center the panel instead of pushing it to the end */
+        justify-content: center;
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+
+    .filterPanel {
+        /* Remove fixed width and margins to fit the phone screen */
+        width: 95%;
+        margin-right: 0;
+        
+        /* Switch to a more compact layout */
+        padding: 1.25rem;
+        gap: 1rem;
+        
+        /* Subtle tweak to the shadow for smaller screens */
+        box-shadow: 0 4px 20px rgba(45, 11, 49, 0.15);
+        
+        /* Optional: If filters are internal elements like selects or buttons, 
+           you might want them side-by-side on mobile */
+        flex-direction: column; 
+    }
+}

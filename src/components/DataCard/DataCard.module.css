@@ -1,0 +1,67 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    
+    
+    background: rgba(244, 240, 246, 0.5); 
+    backdrop-filter: blur(4px);
+    
+    
+    border-radius: 16px;
+    border: 1px solid rgba(218, 182, 225, 0.4); 
+    box-shadow: 0 4px 15px rgba(45, 11, 49, 0.05);
+    
+    transition: transform 0.2s ease;
+}
+
+
+
+.pill {
+    font-family: 'Open Sans', sans-serif;
+    color: #2D0B31; 
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+
+    display: flex;
+    align-items: center;
+}
+
+.pill::before {
+    content: "•";
+    color: #DAB6E1;
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 1rem;         
+        margin-top: 0.75rem;
+        
+        
+        background: rgba(244, 240, 246, 0.8); 
+        
+       
+        box-shadow: 0 2px 10px rgba(45, 11, 49, 0.08);
+        
+       
+          
+        transition: none;
+    }
+
+
+    .pill {
+        font-size: 0.85rem;     
+        line-height: 1.4;
+    }
+
+    .pill::before {
+        font-size: 1rem;       
+        margin-right: 6px;
+    }
+}

@@ -1,0 +1,43 @@
+.titleContainer {
+    display: flex;
+    flex-direction: row;     
+    align-items: center;      
+    justify-content: center;;  
+    gap: 1.5rem;             
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 10rem;             
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1)); 
+}
+
+.mainHeading {
+    color: #5F2B70;        
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;              
+    letter-spacing: -0.5px;
+}
+
+
+@media (max-width: 500px) {
+    .titleContainer {
+        flex-direction: column;
+        gap: 0.5rem;           
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .logo {
+        width: 6rem;           
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .mainHeading {
+        font-size: 1.5rem;  
+        letter-spacing: 0;      
+        line-height: 1.2;
+    }
+}

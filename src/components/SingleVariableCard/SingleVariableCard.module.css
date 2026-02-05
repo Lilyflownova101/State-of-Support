@@ -1,0 +1,68 @@
+.purpleVariableCard {
+    background-color: #5F2B70; 
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 12px rgba(45, 11, 49, 0.15); 
+    border: 1px solid rgba(218, 182, 225, 0.2);
+  }
+  
+  .pillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgba(218, 182, 225, 0.15);
+    border: 1px solid rgba(218, 182, 225, 0.3);
+    border-radius: 9999px;
+    padding: 6px 12px;
+  }
+  
+  .label {
+    color: #DAB6E1; 
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  
+  .value {
+    color: #F4F0F6; 
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+ @media (max-width: 500px) {
+   
+    .relationshipDefinitionContainer { 
+        
+        border-radius: 20px !important; 
+        aspect-ratio: auto !important; 
+        width: 100% !important;
+        
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .relationshipLabel {
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        opacity: 0.8;
+        border-bottom: 1px solid rgba(218, 182, 225, 0.4);
+        padding-bottom: 4px;
+        width: fit-content;
+    }
+
+    .definitionText {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        word-wrap: break-word; 
+} }
